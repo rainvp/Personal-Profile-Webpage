@@ -152,9 +152,5 @@ div {
 }
 
 .gallery img:hover {
-  transform: scale(3); 
-  cursor: zoom-in;
-  z-index: 9999;
-  position: relative;
-  top: -50px; 
+ transform: scale(1.5);
 }
