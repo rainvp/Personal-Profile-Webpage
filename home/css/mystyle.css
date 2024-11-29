@@ -3,7 +3,6 @@ body {
   background-image: url('https://i.pinimg.com/736x/33/9a/13/339a132e3c1a2ccd773b3e6bab35e419.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   color: #333;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -153,6 +152,9 @@ div {
 }
 
 .gallery img:hover {
-  transform: scale(1.5);
-  transition: transform 0.3s ease;
+  transform: scale(3); 
+  cursor: zoom-in;
+  z-index: 9999;
+  position: relative;
+  top: -50px; 
 }
