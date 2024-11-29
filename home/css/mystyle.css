@@ -95,7 +95,6 @@ div {
   align-items: center; 
 }
 
-/* Button Styling */
 .button-container {
   margin-top: 10px;
 }
@@ -125,7 +124,7 @@ div {
 
 
 .gallery-section {
-  margin: 23px auto;
+  margin: 20px auto;
   padding: 15px;
   background-color: #ffffff; 
   border-radius: 8px;
