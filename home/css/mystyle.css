@@ -48,11 +48,16 @@ p {
 }
 
 img {
+  width: 100%;
+  max-width: 150px; 
+  height: auto; 
   display: block;
   margin: 10px auto;
   border-radius: 6px;
-  border: 1px solid #b3addf; 
+  border: 1px solid #b3addf;
 }
-</style>
-</head>
-<body>
+
+div {
+  display: inline-block;
+  margin: 10px;
+}
