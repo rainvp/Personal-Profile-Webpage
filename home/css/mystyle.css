@@ -151,7 +151,7 @@ div {
 .row {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 100px;
 }
 
 .logo-item {
@@ -164,7 +164,7 @@ div {
 
 .logo {
   width: auto;
-  height: 9auto0px;
+  height: auto;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
