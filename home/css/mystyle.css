@@ -24,6 +24,13 @@ h2 {
   text-align: left;
 }
 
+h6 {
+  color: #4c489d;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 h3 {
   color: #7370ae;
   font-size: 20px;
