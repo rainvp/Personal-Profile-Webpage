@@ -186,14 +186,8 @@ div {
   text-align: center;
 }
 
-.gallery-section {
-  margin: 30px auto;
-  border-radius: 10px;
-  text-align: center;
-  max-width: 1200px; 
-}
-
 .gallery {
+  margin: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 20px; 
