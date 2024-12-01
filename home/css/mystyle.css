@@ -4,7 +4,7 @@ body {
   background-size: cover;
   background-position: center;
   color: #333;
-  font-family: Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -130,11 +130,7 @@ div {
   margin: 30px auto;
   background-color: #f9f9f9;
   border-radius: 8px;
-}
-
-.it-experience {
-  text-align: center;
-  margin: 30px auto;
+  max-width: 800px;
 }
 
 .it-experience h2 {
