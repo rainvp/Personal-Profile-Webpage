@@ -115,6 +115,7 @@ div {
 
 .button:hover {
   background-color: #b4a4e4;
+  color: #8854ac; 
 }
 
 .achievement {
