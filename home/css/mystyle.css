@@ -150,7 +150,7 @@ div {
 .row {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 800px;
 }
 
 .logo-item {
@@ -177,7 +177,7 @@ div {
   font-size: 14px;
   color: #333;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 }
 
 .gallery-section {
