@@ -126,33 +126,27 @@ div {
 }
 
 .it-experience {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
   margin: 30px auto;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  max-width: 800px;
+  gap: 20px; 
 }
 
 .it-experience h2 {
-  color: #4c489d;
   margin-bottom: 20px;
 }
 
 .triangle-layout {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
 }
 
 .row {
   display: flex;
   justify-content: center;
-  gap: 30px; 
-}
-
-.front-row {
-  margin-top: -30px; 
+  gap: 30px;
 }
 
 .logo-item {
