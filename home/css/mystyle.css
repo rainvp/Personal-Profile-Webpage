@@ -125,6 +125,59 @@ div {
   text-align: left;
 }
 
+.it-experience {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logo-row.back-row {
+  display: flex;
+  justify-content: space-between;
+  width: 60%; 
+  margin-bottom: -20px; 
+  z-index: 1;
+}
+
+
+.logo-row.front-row {
+  display: flex;
+  justify-content: space-between;
+  width: 40%; /
+  z-index: 2;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.2); 
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    width: 100%;
+  }
+
+  .logo-row.back-row {
+    width: 80%;
+  }
+
+  .logo-row.front-row {
+    width: 60%;
+  }
+
 
 .gallery-section {
   margin: 20px auto;
