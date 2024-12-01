@@ -58,8 +58,12 @@ li {
   list-style-type: disc;
 }
 
+li p {
+  font-size: 16px;
+}
+
 p {
-  font-size: 18px;
+  font-size: 16px;
   margin: 10px 0;
   text-align: justify;
 }
@@ -141,13 +145,13 @@ div {
 .triangle-layout {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 
 .row {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
 }
 
 .logo-item {
