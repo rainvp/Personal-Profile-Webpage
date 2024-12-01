@@ -146,7 +146,7 @@ div {
 .row {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
 }
 
 .logo-item {
@@ -172,6 +172,7 @@ div {
   margin: 0;
   font-size: 14px;
   color: #333;
+  font-weight: bold;
 }
 
 .gallery-section {
