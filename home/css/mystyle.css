@@ -150,7 +150,7 @@ div {
 .row {
   display: flex;
   justify-content: center;
-  gap: 800px;
+  gap: 80px;
 }
 
 .logo-item {
@@ -173,7 +173,6 @@ div {
 }
 
 .logo-item p {
-  margin: 0;
   font-size: 14px;
   color: #333;
   font-weight: bold;
