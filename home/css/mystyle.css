@@ -163,8 +163,8 @@ div {
 }
 
 .logo {
-  width: 50;
-  height: auto;
+  width: auto;
+  height: 50;
   margin-bottom: 5px;
   transition: transform 0.3s ease;
 }
@@ -175,7 +175,7 @@ div {
 
 .logo-item p {
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
   font-weight: bold;
   text-align: left;
