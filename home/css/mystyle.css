@@ -159,7 +159,7 @@ div {
 
 .logo {
   width: 80px;
-  height: 80px;
+  height: auto;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
@@ -173,6 +173,7 @@ div {
   font-size: 18px;
   color: #333;
   font-weight: bold;
+  text-align: left;
 }
 
 .gallery-section {
