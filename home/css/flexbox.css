@@ -1,27 +1,16 @@
-
-section {
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   padding: 10px;
+  background-color: #edbdbd;
 }
 
 .flex-container > div {
-  background-color: #ffffff;
+  background-color: #f4d9d9;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #814545;
   border-radius: 8px;
   text-align: center;
   width: 150px;
