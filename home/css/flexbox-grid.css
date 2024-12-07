@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcece3;
+    font-size: 18px;
+}
+
+header {
+    text-align: center;
+    background-color: #4b3f2f;
+    color: #fcece3;
+    padding: 30px 0;
+    font-size: 28px;
+}
+
+header img {
+    max-width: 200px;
+    border-radius: 200px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+
+.left, .right, .center {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left {
+    background-color: #9c887c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.right {
+    background-color: #baa597;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.center {
+    background-color: #baa597;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.item {
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    color: #4e4b45;
+    margin-bottom: 10px;
+}
+
+h3 {
+  color: #4e4b45;
+  margin: 5px;
+}
+
+a {
+    color: #9c887c;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    color: #4e4b45;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.item5 div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+#education h2 {
+    color: #63554c;
+}
+
+#education p{
+  margin: 10px;
+  font-size: 17.5px;
+}
+
+#experience h2 {
+    color: #4e4b45;
+}
+
+#hobbies h2 {
+    color: #9c887c;
+}
+
+#goals h2 {
+    color: #baa597;
+}
+
+#gallery h2 {
+    color: #63554c;
+    text-align: center;
+    margin: 20px;
+}
+
+section {
+    padding: 20px;
+    background-color: #fcece3;
+    border-radius: 10px;
+}
+
+header a {
+    color: #fcece3;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+}
+
+header a:hover {
+    color: #baa597;
+}
+
+.item5 img {
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 180px;
+    height: auto;
+    object-fit: cover;
+}
+
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px;
+}
