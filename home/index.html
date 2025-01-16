@@ -7,24 +7,20 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
     <link rel="stylesheet" href="css/main.css">
-
   </head>
-<body>
+  <body>
 
-  
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="navbar">
-    <div class="navbar-item"><a href="#" class="navbar-link">HOME</a></div>
-    <div class="navbar-item"><a href="#about" class="navbar-link">ABOUT</a></div>
-    <div class="navbar-item"><a href="#menu" class="navbar-link">SECTION 2</a></div>
-    <div class="navbar-item"><a href="#where" class="navbar-link">SECTION 3</a></div>
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="navbar">
+      <div class="navbar-item"><a href="#" class="navbar-link">HOME</a></div>
+      <div class="navbar-item"><a href="#about" class="navbar-link">ABOUT</a></div>
+      <div class="navbar-item"><a href="#menu" class="navbar-link">SECTION 2</a></div>
+      <div class="navbar-item"><a href="#where" class="navbar-link">SECTION 3</a></div>
+    </div>
   </div>
-</div>
 
-
-<!-- Header with image -->
-
+  <!-- Header with image -->
   <header class="bgimg w3-display-container" id="home">
     <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
       <span class="w3-tag">Brewing Success!</span>
@@ -37,83 +33,85 @@
     </div>
   </header>
 
-<!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-large">
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-sand w3-large">
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width: 1000px">
+        <h5 class="w3-center w3-padding-64">
+          <span class="w3-tag w3-wide">ABOUT THE CAFE</span>
+        </h5>
+        <p>Welcome to my personal profile webpage!</p>
+        <p>This is my very first step into the world of web development. 
+          I created this page to explore and learn the basics of building a website 
+          while expressing my style through a cozy café-inspired theme. 
+          It’s a small but meaningful project that represents the beginning of 
+          my journey in web design and development</p>
 
-<!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width: 1000px">
-    <h5 class="w3-center w3-padding-64">
-      <span class="w3-tag w3-wide">ABOUT THE CAFE</span>
-    </h5>
-  
-    <p>Welcome to my personal profile webpage!</p>
-    <p>This is my very first step into the world of web development. 
-    I created this page to explore and learn the basics of building a website 
-    while expressing my style through a cozy café-inspired theme. 
-    It’s a small but meaningful project that represents the beginning of 
-    my journey in web design and development</p>
+        <div class="w3-panel w3-leftbar w3-light-beige">
+          <p><i>"The sun will rise and we will try again" *quote creds/smthn short i will say abt it*.</i></p>
+          <p>Chef, Coffeeist and Owner: Rain Cel-Anne Sophia V. Presa</p> 
+        </div>
 
-    <div class="w3-panel w3-leftbar w3-light-beige">
-      <p><i>"The sun will rise and we will try again" *quote creds/smthn short i will say abt it*.</i></p>
-      <p>Chef, Coffeeist and Owner: Rain Cel-Anne Sophia V. Presa</p> 
-    </div>  
-
-    <div id="app">
-      <div class="gallery-slider">
-        <div class="slider-nav left-arrow" @click="prevSlide">&#10094;</div>
-        <div class="slider-images-wrapper">
-          <div v-for="image in currentImages" :key="image.id" class="slider-image">
-            <img :src="image.src" :alt="image.alt" class="gallery-img" />
+        <!-- Gallery Slider (Existing Section) -->
+        <div id="app">
+          <div class="gallery-slider">
+            <div class="slider-nav left-arrow" @click="prevSlide">&#10094;</div>
+            <div class="slider-images-wrapper">
+              <div v-for="image in currentImages" :key="image.id" class="slider-image">
+                <img :src="image.src" :alt="image.alt" class="gallery-img" />
+              </div>
+            </div>
+            <div class="slider-nav right-arrow" @click="nextSlide">&#10095;</div>
+          </div>
+          <div class="slider-caption">
+            <p>{{ currentCaption }}</p>
           </div>
         </div>
-        <div class="slider-nav right-arrow" @click="nextSlide">&#10095;</div>
-      </div>
-    
-      <!-- Subcaption -->
-      <div class="slider-caption">
-        <p>{{ currentCaption }}</p>
-      </div>
 
-<!--Container -->
-<div class="w3-container" id="menu">
-  <div class="w3-content" style="max-width:700px">
- 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Section 2</span></h5>
-  
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="textbox(event, 'Title here');" id="myLink">
-        <div class="w3-col s6 tablink">Text here</div>
-      </a>
-      <a href="javascript:void(0)" onclick="textbox(event, 'Title2 here');">
-        <div class="w3-col s6 tablink">Text here</div>
-      </a>
-    </div>
+        <!-- Section 2 -->
+        <div class="w3-container" id="menu">
+          <div class="w3-content" style="max-width:700px">
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Section 2</span></h5>
+            <div class="w3-row w3-center w3-card w3-padding">
+              <a href="javascript:void(0)" onclick="textbox(event, 'Title here');" id="myLink">
+                <div class="w3-col s6 tablink">Text here</div>
+              </a>
+              <a href="javascript:void(0)" onclick="textbox(event, 'Title2 here');">
+                <div class="w3-col s6 tablink">Text here</div>
+              </a>
+            </div>
+            <div id="Title here" class="w3-container menu w3-padding-48 w3-card">
+              <h5>Coming soon...</h5>
+              <p class="w3-text-grey">text here</p><br>
+            </div>
+            <div id="Title2 here" class="w3-container menu w3-padding-48 w3-card">
+              <h5>Coming soon...</h5>
+              <p class="w3-text-grey">text here</p><br>
+            </div>
+          </div>
+        </div>
 
-    <div id="Title here" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coming soon...</h5>
-      <p class="w3-text-grey">text here</p><br>
-    </div>
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
+          <div class="w3-content" style="max-width:1000px;">
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">(Form Section using Vue JS)</span></h5>
+            
+            <!-- Vue.js Form -->
+            <div id="contact-form">
+              <form @submit.prevent="submitForm" class="w3-card-4 w3-padding">
+                <div class="w3-margin-bottom">
+                  <label for="name" class="w3-text-grey">Your Name:</label>
+                  <input type="text" id="name" v-model="name" class="w3-input w3-border w3-round" placeholder="Enter your name" required />
+                </div>
+                <div class="w3-margin-bottom">
+                  <label for="message" class="w3-text-grey">Your Message:</label>
+                  <textarea id="message" v-model="message" class="w3-input w3-border w3-round" placeholder="Enter your message" rows="5" required></textarea>
+                </div>
 
-    <div id="Title2 here" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coming soon...</h5>
-      <p class="w3-text-grey">text here</p><br>
-    </div>
-
-  <!-- Contact/Area Container -->
-<div class="w3-container" id="where" style="padding-bottom:32px;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">(Form Section using Vue JS)</span></h5>
-    <p>Coming soon...</p>
-    <img src="img link here" style="width:100%;max-width:1000px;margin-top:32px;">
-  </div>
-</div>
-
-
- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
- <script src="js/menu.js"></script> 
- <script src="js/gallery-vue.js"></script>  
-
-
-</body>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+         <script src="js/menu.js"></script> 
+         <script src="js/gallery-vue.js"></script>
+         <script src="js/form-vue.js"></script>  
+      </body>
 </html>
