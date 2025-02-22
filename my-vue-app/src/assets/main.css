@@ -475,6 +475,7 @@ body {
     margin: 0;
     padding: 0;
   }
+
   
   /* Comments Section */
   .comments-section, .contact-section {
@@ -539,7 +540,7 @@ body {
   }
   
   .success-message, .confirmation-message {
-    color: #815e55d3;
+    color: #4a7a3d;
     font-weight: bold;
     text-align: center;
     margin-top: 1rem;
