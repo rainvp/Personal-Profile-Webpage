@@ -1,6 +1,9 @@
 body, html {
     height: 100%;
-    font-family: "Inconsolata", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #4a3b2b;
+    background-color: #fcf5e8;
 }
 
  .bgimg {
@@ -14,50 +17,314 @@ body, html {
     display: none;
  }
 
-/* Custom Styles */
-.w3-button.custom-bg {
+ a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+p {
+   font-size: 18px;
+}
+
+/*--------------------------------------------- Custom Styles------------------------------------------- */
+.button.custom-bg {
     background-color: #f7e7d1; 
-    color: #551f18; 
+    color: #551f18;
 }
   
-  .w3-button.custom-bg:hover {
+  .button.custom-bg:hover {
     background-color: #795548 !important;
     color: #ffffff !important; 
   }
 
-  /* Navbar container */
-  .navbar {
+  .tag {
     display: flex;
-    justify-content: space-between; 
-    background-color: #f7e7d1; 
-    width: 100%; 
-    position: relative; 
-    padding: 0; 
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
-  }
-  
-  /* Navbar text */
-  .navbar-item {
-    flex: 1; 
-    text-align: center; 
-  }
-  
-  /* Navbar links */
-  .navbar-link {
-    display: block;
-    padding: 14px 0; 
-    color: #580e0e; 
-    text-decoration: none; 
-    font-size: 14px; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 40px; /* Spacing above and below the tag */
+    font-size: 1.5rem; /* Adjust text size */
+    font-weight: bold;
+    color: #4a3b2b; /* Coffee-inspired color */
+    text-transform: uppercase; /* Make the text all caps */
+    letter-spacing: 2px; /* Add some spacing between letters */
+    position: relative; /* For positioning the lines */
+}
 
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
   }
-  
-  /* Hover effect */
-  .navbar-link:hover {
-    background-color: #795548; 
-    color: #ffffff;
-  }
-  
+
+.tag::before {
+    content: "";
+    flex: 1; 
+    height: 3px; 
+    flex-grow: 5; /* Makes the lines expand further */
+    background: linear-gradient(to right, #d4b59b, #502917);
+    margin: 0 15px;
+}
+.tag::after {
+    content: "";
+    flex: 1; 
+    flex-grow: 5; /* Makes the lines expand further */
+    height: 3px; 
+    background: linear-gradient(to left, #d4b59b, #502917); /* Gradient effect */
+    margin: 0 15px;
+}
+
+/* Set max-width for general content */
+.w3-container,
+.w3-content {
+  max-width: 1500px; /* Adjust this value as per your design needs */
+  margin: 0 auto; /* Centers the content */
+}
+
+@media (max-width: 768px) {
+    .w3-panel p {
+        text-align: left !important;
+        padding-left: 10px; /* Adjust if needed */
+    }
+
+}
+
+
+/* ---------------------------------------- Navigation Bar ---------------------------------------------- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f7e7d1; 
+    color: #4a3b2b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar .logo img {
+    height: 65px; /* Adjust the height of the logo */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper spacing around the image */
+}
+
+
+.navbar a {
+    color: #4a3b2b; 
+    font-size: 20px;
+    text-decoration: none; 
+    padding: 10px 25px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.navbar a:hover {
+    background-color: #d4b59b; 
+    color: #fff; 
+    border-radius: 5px;
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #4a3b2b;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.dropbtn:hover {
+    color: #d4b59b;
+}
+
+/* Dropdown icon */
+.dropdown-icon {
+    font-size: 16px;
+    margin-left: 5px;
+    transition: transform 0.3s ease; /* Animation for rotation */
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0; /* Align dropdown below the icon */
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 250px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px); /* Start with a slight downward position */
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; /* Smooth fade-in and slide-up */
+}
+
+/* Dropdown sections */
+.dropdown-section {
+    padding: 15px;
+    border-bottom: 1px solid #f7e7d1;
+}
+
+.dropdown-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a3b2b;
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Optional: Make titles uppercase for a neat look */
+}
+
+/* Dropdown items */
+.dropdown-content a {
+    color: #4a3b2b;
+    padding: 8px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f7e7d1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Slide to the original position */
+}
+
+/* Rotate the arrow when dropdown is open */
+.dropdown:hover .dropdown-icon {
+    transform: rotate(180deg); /* Rotate arrow */
+}
+
+/* ------------------------------------------------ Banner & Header ---------------------------*/
+#banner {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding-left: 90px;
+    padding-top: 20px;  
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://github.com/rainvp/Personal-Profile-Webpage/blob/main/images/472690451_953965212896626_182944049874713246_n.jpg?raw=true");
+    min-height: 75%;
+}
+
+/* Optional Gradient Overlay for a softer look */
+#banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(241, 179, 121, 0.39), rgba(255, 255, 255, 0.5));
+}
+
+/* Banner content section */
+#banner-content {
+    animation: fadeInLeft 1.5s ease-out;
+    max-width: 50%; /* Restrict the content width */
+    z-index: 2; /* Ensures content is above the background */
+    position: relative;
+    text-align: left;
+}
+
+/* Header styling */
+#banner h1 {
+    font-size: 5em;
+    color:#fffaf5;
+    margin-bottom: 15px;
+    animation: fadeInLeft 1.5s ease-out;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px; 
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Subheading styling */
+#banner h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    animation: fadeInLeft 1.5s ease-out;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+}
+
+/* Button styling */
+#banner .button {
+    background-color: #502917;
+    color: #fff;
+    margin-top: 15px;
+    padding: 22px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    display: inline-block; 
+    text-align: center;
+}
+
+/* Add hover effect */
+#banner .button:hover {
+    background-color: #6a3d22;
+    transform: scale(1.05); 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #banner .button {
+        padding: 0.8em 1.5em; /* Adjust padding for smaller screens */
+        font-size: 1rem; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    #banner .button {
+        padding: 0.6em 1em; /* Further adjust for very small screens */
+        font-size: 0.9rem;
+        margin: 0.5em;
+    }
+}
+
+
+/* Fade-in left animation */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
   .w3-tag {
     background-color: #887169; 
     color: #ffffff; 
@@ -139,7 +406,184 @@ body, html {
     color: #551f18; 
     font-family: "Inconsolata", sans-serif;
   }
+
+ /* ---------------------------------------- Profile Picture ----------------------------------------------*/
+/* Default layout (Desktop) */
+.owner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px; /* Keeps text in place */
+}
+
+/* Make sure text stays justified */
+.owner-text {
+    flex: 1;
+    text-align: justify;
+}
+
+/* Vertical photo layout */
+.owner-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+/* Ensure images remain square */
+.owner-gallery img {
+    width: 100%;
+    max-width: 150px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .owner-wrapper {
+        flex-direction: column; /* Stack text & photos vertically */
+        align-items: center;
+        gap: 20px; /* Reduce gap to avoid too much space */
+    }
+
+    .owner-text {
+        width: 100%; /* Ensures full width but stays left-aligned */
+        text-align: justify; /* Keeps text justified on smaller screens */
+    }
+
+    .owner-gallery {
+        flex-direction: row; /* Display photos in a row instead of a long column */
+        flex-wrap: wrap; /* Allow wrapping for more responsiveness */
+        justify-content: center;
+    }
+
+    .owner-gallery img {
+        max-width: 120px; /* Make images slightly smaller */
+    }
+
+    .owner-text p:first-of-type {
+        text-align: center; /* Center only the first paragraph */
+    }
+}
+
+/* ---------------------------------------------------------------- Comments Contact --------------------------------------------------------------*/
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5ebe0;
+    color: #4a3f35;
+    margin: 0;
+    padding: 0;
+  }
   
+  h5.tag {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #7a503d;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Comments Section */
+  .comments-section, .contact-section {
+    max-width: 600px;
+    background: #fff8f0;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comment-form input, .comment-form textarea,
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #d3a484;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fffdf8;
+    color: #4a3f35;
+  }
+  
+  .comment-form button, .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #7a503d;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .comment-form button:hover, .contact-form button:hover {
+    background: #5d3a2e;
+  }
+  
+  .comments-list {
+    margin-top: 1rem;
+  }
+  
+  .comment-box {
+    background: #fdf7f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #d3a484;
+    border-radius: 8px;
+  }
+  
+  .comment-box p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  
+  .comment-box span {
+    font-size: 0.8rem;
+    color: #7a503d;
+    display: block;
+    margin-top: 4px;
+  }
+  
+  .success-message, .confirmation-message {
+    color: #4a7a3d;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  
+/* --------------------------------------------- Interests ----------------------------------- */
+/* Interest Section */
+.interest-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .interest-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .interest-list li {
+    font-size: 16px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .interest-list li::before {
+    content: ""; /* Custom bullet point */
+    font-size: 18px;
+    color: #502917;
+    margin-right: 10px;
+  }
+  
+    
   
   
   
