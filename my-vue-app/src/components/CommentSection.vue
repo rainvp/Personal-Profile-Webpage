@@ -1,38 +1,7 @@
-<template>   
-<!-- What People Say (Comments Section) -->
-<div id="app-comments" class="comments-section">
-  <h5 class="tag">WHAT PEOPLE SAY</h5>
-  <form @submit.prevent="addComment" class="comment-form">
-    <input v-model="newComment.name" type="text" placeholder="Your Name" required />
-    <textarea v-model="newComment.message" placeholder="Write a comment..." required></textarea>
-    <button type="submit">Post Comment</button>
-  </form>
-
-  <div class="comments-list">
-    <div v-for="comment in comments" :key="comment.id" class="comment-box">
-      <p><b>{{ comment.name }}</b>: {{ comment.message }}</p>
-      <span>Just now</span>
-    </div>
-  </div>
-
-  <p v-if="successMessage" class="success-message">{{ successMessage }}</p>
-</div>
-
-<!-- Contact Me Section -->
-<div id="app-contact" class="contact-section">
-  <h5 class="tag">CONTACT ME</h5>
-  <form @submit.prevent="sendMessage" class="contact-form">
-    <input v-model="contactInfo.name" type="text" placeholder="Your Name" required />
-    <input v-model="contactInfo.email" type="email" placeholder="Your Email" required />
-    <textarea v-model="contactInfo.message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
-
-  <p v-if="confirmationMessage" class="confirmation-message">{{ confirmationMessage }}</p>
-</div>
-</template>
-
 <script setup>
+import { ref, onMounted } from 'vue';
+import { createClient } from '@supabase/supabase-js';
+
 const supabaseUrl = 'https://kbhnxlrhbxamkgwyqpjn.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtiaG54bHJoYnhhbWtnd3lxcGpuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzg0Njc3NzEsImV4cCI6MjA1NDA0Mzc3MX0.lCXlrIXQaw3BvkzR9SBLGuxXnDAIscdkzcUpnn0KR-8';
 const supabase = createClient(supabaseUrl, supabaseKey);
@@ -87,6 +56,7 @@ onMounted(() => {
     .subscribe();
 });
 </script>
+
 
 <style>
 body {

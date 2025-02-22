@@ -62,10 +62,10 @@
 
       <!-- Right Side: Owner's Photos (Vertical) -->
       <div class="owner-gallery" data-aos="fade-left">
-       <img src="" alt="Owner's Photo">
-       <img src="/my-vue-app/public/images/prof2.jpg" alt="Photo 1">
-       <img src="/my-vue-app/public/images/prof3.jpg" alt="Photo 2">
-       <img src="/my-vue-app/public/images/prof4.jpgg" alt="Photo 3">
+       <img src="https://github.com/rainvp/Personal-Profile-Webpage/blob/feature/4_rvp_finalswebsite/images/prof1.jpg?raw=true" alt="Owner's Photo">
+       <img src="https://github.com/rainvp/Personal-Profile-Webpage/blob/feature/4_rvp_finalswebsite/images/prof2.jpg?raw=true" alt="Photo 1">
+       <img src="https://github.com/rainvp/Personal-Profile-Webpage/blob/feature/4_rvp_finalswebsite/images/prof3.jpg?raw=true" alt="Photo 2">
+       <img src="https://github.com/rainvp/Personal-Profile-Webpage/blob/feature/4_rvp_finalswebsite/images/prof4.jpg?raw=true" alt="Photo 3">
     </div>
 
     </div>

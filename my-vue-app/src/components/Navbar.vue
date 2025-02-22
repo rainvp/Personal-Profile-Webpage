@@ -43,36 +43,7 @@
     
 </template>
 
-<style scoped>
-body, html {
-    height: 100%;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    color: #4a3b2b;
-    background-color: #fcf5e8;
-}
-
- .bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("https://github.com/rainvp/Personal-Profile-Webpage/blob/main/images/472690451_953965212896626_182944049874713246_n.jpg?raw=true");
-    min-height: 75%;
-}
-
- .menu {
-    display: none;
- }
-
- a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s;
-}
-
-p {
-   font-size: 18px;
-}
-
+<style>
 /* ---------------------------------------- Navigation Bar ---------------------------------------------- */
 .navbar {
     position: fixed;
