@@ -2,6 +2,8 @@
   <div>
     <NavbarBanner/>
     <CommentSection/>
+    <Footer/>
+    
   </div>
 </template>
 
