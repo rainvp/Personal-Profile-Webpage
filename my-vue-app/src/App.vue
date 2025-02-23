@@ -1,15 +1,11 @@
 <template>
   <div>
-    <Navbar/>
-    <Banner/>
-    <About/>
+    <NavbarBanner/>
     <CommentSection/>
   </div>
 </template>
 
 <script setup>
-import Navbar from './components/Navbar.vue';
-import Banner from './components/Banner.vue';
-import About from './components/About.vue';
+import NavbarBanner from './components/NavbarBanner.vue';
 import CommentSection from './components/CommentSection.vue';
 </script>

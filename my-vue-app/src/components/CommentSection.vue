@@ -1,3 +1,4 @@
+<template></template>
 <script setup>
 import { ref, onMounted } from 'vue';
 import { createClient } from '@supabase/supabase-js';

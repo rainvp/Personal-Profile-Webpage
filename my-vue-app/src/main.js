@@ -1,15 +1,16 @@
 import { createApp } from 'vue';
+
 import App from './App.vue';
 import CommentSection from './components/CommentSection.vue';
-import About from './components/About.vue';
-import Banner from './components/Banner.vue';
-import Navbar from './components/Navbar.vue';
+import NavbarBanner from './components/NavbarBanner.vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const app = createApp(App);
 
+AOS.init();
+
 app.component('CommentSection', CommentSection);
-app.component('AboutSection', About);
-app.component('BannerSection', Banner);
-app.component('NavBar', Navbar);
+app.component('NavbarBanner', NavbarBanner);
 
 app.mount('#app');

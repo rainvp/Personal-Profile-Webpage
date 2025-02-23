@@ -1,3 +1,145 @@
+<template> 
+    <nav class="navbar">
+      <div class="logo">
+        <img 
+          src="https://scontent.fmnl33-1.fna.fbcdn.net/v/t1.15752-9/474667107_1150394953328908_453092773794161443_n.png?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFtTV2Y3K0jKg0_2qV1Ho2xsF94E5Xqu6ewX3gTleq7pyQODnFyHMmvOYxLBKQlWA6rilKeyHQG2zaatLODHo2A&_nc_ohc=rpQ5djOAujEQ7kNvgHIFAZB&_nc_zt=23&_nc_ht=scontent.fmnl33-1.fna&oh=03_Q7cD1gF1ICi8zBFjshzJ24XNdz3oZT7SBQdxXjfFdQZv9Wfp3w&oe=67BFD3DF"
+          alt="Rain's Cafe Logo">
+      </div>   
+    
+      <div class="nav-links">
+          <a href="#home"><b>Home</b></a>
+          <a href="#about"><b>About</b></a>
+          <a href="#gallery"><b>Gallery</b></a>
+          <a href="#contact"><b>Contact</b></a>
+          <div class="dropdown">
+              <button class="dropbtn">
+                  <span class="dropdown-icon">&#x25BC;</span>
+              </button>
+              <div class="dropdown-content">
+                  <div class="dropdown-section">
+                    <h4 class="dropdown-title">Menu</h4>
+                    <a href="#menu1">Coffees</a>
+                    <a href="#menu2">Pastries</a>
+                    <a href="#menu3">Specials</a>
+                  </div>
+                  <div class="dropdown-section">
+                    <h4 class="dropdown-title">Contact Us</h4>
+                    <a href="#location">Our Location</a>
+                    <a href="#support">Customer Support</a>
+                  </div>
+                  <div class="dropdown-section">
+                    <h4 class="dropdown-title">Social</h4>
+                    <a href="#facebook">Facebook</a>
+                    <a href="#instagram">Instagram</a>
+                    <a href="#twitter">Twitter</a>
+                  </div>
+              </div>
+          </div>
+      </div> 
+    </nav>
+    
+ <!------------------------------------------ Banner Section --------------------------------------------------------------------->
+        <header id="banner">
+          <div id="banner-content" class="row clearfix">
+            <div class="col-38">
+              <div class="section-heading">
+                <h1>Rain's Digital Café</h1>
+              </div>
+              <a href="#" class="button">Get to know me!</a>
+            </div>
+          </div>
+        </header>
+
+
+<!-- About The Page Section -->
+<div class="w3-container" id="about" data-aos="fade-up">
+  <div class="w3-content">
+    <h5 class="tag">ABOUT THE CAFE</h5>
+    <p class="welcome-text"><b>Welcome to my personal profile webpage!</b></p>
+    <p class="justified-text">
+      This is my very first step into the world of web development. 
+      I created this page to explore and learn the basics of building a website 
+      while expressing my style through a cozy café-inspired theme. 
+      It’s a small but meaningful project that represents the beginning of 
+      my journey in web design and development.
+    </p>
+  </div>
+</div>
+
+<!-- About The Owner Section -->
+<div class="w3-container" id="owner" data-aos="fade-up">
+  <div class="w3-content owner-content">
+    
+    <!-- Title -->
+    <div class="full-width">
+      <h5 class="tag">ABOUT THE OWNER</h5>
+    </div>
+
+    <div class="owner-wrapper">
+      <!-- Left Side: Text Content -->
+      <div class="owner-text" data-aos="fade-right">
+        <p><b> 🍵 Welcome to My Little Corner of the Internet Café! 🍵</b></p>
+        <p>
+          Just like a <span style="color: rgb(17, 71, 17)">well-whisked matcha</span>, I’m blending my passions into something smooth and vibrant. 
+          I’m a <b>second-year Computer Science student specializing in Cybersecurity and Forensics</b>, 
+          always striving to learn more and keep things secure—both online and in my dream café plans! 
+          My goal? To brew a successful tech career in <b>Singapore</b>, but if a fulfilling path unfolds in the <b>Philippines</b>, 
+          that would be just as refreshing.
+        </p>
+        <p>
+          I’m also a <b>starting content creator</b> on TikTok, serving up beauty and 
+          makeup content with the same care as crafting the <span style="color: rgb(17, 71, 17)">perfect iced matcha</span>. 
+          One day, I hope to bring <b>SummerRain Café</b> to life—a cozy café featuring a library, boutique, and of course, delicious drinks and pastries!
+        </p>
+
+        <div class="w3-panel w3-leftbar w3-light-beige">
+          <p><i>Life motto: "The sun will rise and we will try again"</i></p>
+          <p><b>Founder: Rain Cel-Anne Sophia V. Presa</b></p> 
+        </div>
+
+        <!-- Interest List -->
+        <h4 class="interest-title">🍵 A Few Things That Catch My Interest:</h4>
+        <ul class="interest-list">
+          <li>📺 Watching movies & series</li>
+          <li>🎀 Collecting anything I find cute</li>
+          <li>🎧 Listening to music</li>
+          <li>💄 Makeup magic</li>
+          <li>📖 Reading my heart out</li>
+          <li>🍪 Baking sweet delights</li>
+          <li>🎨 Exploring new hobbies (even if I struggle to finish them!)</li>
+        </ul>
+
+        <p>So, whether you're here for the matcha vibes, tech talk, or beauty content—stay a while, sip, and enjoy! ✨</p>
+      </div>
+
+      <!-- Right Side: Owner's Photos (Vertical) -->
+      <div class="owner-gallery" data-aos="fade-left">
+       <img src="https://github.com/rainvp/Personal-Profile-Webpage/blob/feature/4_rvp_finalswebsite/images/prof1.jpg?raw=true" alt="Owner's Photo">
+       <img src="https://github.com/rainvp/Personal-Profile-Webpage/blob/feature/4_rvp_finalswebsite/images/prof2.jpg?raw=true" alt="Photo 1">
+       <img src="https://github.com/rainvp/Personal-Profile-Webpage/blob/feature/4_rvp_finalswebsite/images/prof3.jpg?raw=true" alt="Photo 2">
+       <img src="https://github.com/rainvp/Personal-Profile-Webpage/blob/feature/4_rvp_finalswebsite/images/prof4.jpg?raw=true" alt="Photo 3">
+    </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!--------------------------------------------- Footer ------------------------------------------------------------>
+<footer class="footer">
+  <div class="footer-content">
+    <p> 2025 Rain's Café. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+        
+    </template>
+    
+    <style>
 body, html {
     height: 100%;
     font-family: 'Poppins', sans-serif;
@@ -26,6 +168,7 @@ body, html {
 p {
    font-size: 18px;
 }
+
 
 /*--------------------------------------------- Custom Styles------------------------------------------- */
 .button.custom-bg {
@@ -62,7 +205,7 @@ p {
     margin-bottom: 20px;
   }
 
-.tag::before {
+  .tag::before {
     content: "";
     flex: 1; 
     height: 3px; 
@@ -86,6 +229,21 @@ p {
   margin: 0 auto; /* Centers the content */
 }
 
+/* ------------------- about cafe ------------------------- */
+@media (max-width: 600px) {
+    .welcome-text {
+        text-align: center;
+        font-weight: bold;
+        color: #5a3d2b;
+    }
+
+    .justified-text {
+        text-align: justify;
+        line-height: 1.6;
+    }
+}
+
+
 @media (max-width: 768px) {
     .w3-panel p {
         text-align: left !important;
@@ -93,7 +251,6 @@ p {
     }
 
 }
-
 
 /* ---------------------------------------- Navigation Bar ---------------------------------------------- */
 .navbar {
@@ -214,6 +371,32 @@ p {
     transform: rotate(180deg); /* Rotate arrow */
 }
 
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links a {
+        font-size: 16px;  /* Decrease font size for small screens */
+        padding: 8px 12px;
+    }
+
+    .dropdown-content a {
+        font-size: 14px;  /* Make dropdown text smaller */
+    }
+
+    .dropbtn {
+        font-size: 14px;  /* Adjust dropdown button size */
+        padding: 8px 10px;
+    }
+
+    /* Reduce logo size for small screens */
+    .navbar .logo img {
+        height: 50px;
+    }
+
+    /* Reduce padding of navbar */
+    .navbar {
+        padding: 8px 15px;
+    }
+}
 /* ------------------------------------------------ Banner & Header ---------------------------*/
 #banner {
     height: 100vh;
@@ -310,7 +493,6 @@ p {
     }
 }
 
-
 /* Fade-in left animation */
 @keyframes fadeInLeft {
     0% {
@@ -322,10 +504,7 @@ p {
         transform: translateX(0);
     }
 }
-
-
-
-  .w3-tag {
+.w3-tag {
     background-color: #887169; 
     color: #ffffff; 
 }
@@ -337,75 +516,7 @@ p {
     border-left: 5px solid #cab291 !important; 
 }
 
-/* Gallery Styling */
-.gallery-slider {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; 
-    width: 99%; 
-    margin: 20px auto; 
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background-color: #f7e7d1; 
-}
 
-.slider-images-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out; 
-    width: 100%;
-}
-
-.slider-image {
-    flex: 0 0 calc(100% / 3); /* 3 images per slide*/
-    max-width: calc(100% / 3); 
-    padding: 5px;
-    box-sizing: border-box;
-}
-
-.gallery-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-.slider-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 36px;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 2;
-    user-select: none;
-}
-
-.left-arrow {
-    left: 10px;
-}
-
-.right-arrow {
-    right: 10px;
-}
-
-.slider-nav:hover {
-    background-color: rgba(0, 0, 0, 0.8); 
-}
-
-/* Subcaption styling */
-.slider-caption {
-    text-align: center;
-    font-size: 16px;
-    color: #551f18; 
-    font-family: "Inconsolata", sans-serif;
-  }
 
  /* ---------------------------------------- Profile Picture ----------------------------------------------*/
 /* Default layout (Desktop) */
@@ -420,6 +531,7 @@ p {
 .owner-text {
     flex: 1;
     text-align: justify;
+    line-height: 1.6; /* Improves readability */
 }
 
 /* Vertical photo layout */
@@ -436,19 +548,21 @@ p {
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 10px;
+    object-position: 20% 20%; /* Moves the focus */
 }
 
 /* Responsive Design for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .owner-wrapper {
         flex-direction: column; /* Stack text & photos vertically */
         align-items: center;
-        gap: 20px; /* Reduce gap to avoid too much space */
+        gap: 40px; /* Reduce gap to avoid too much space */
     }
 
     .owner-text {
         width: 100%; /* Ensures full width but stays left-aligned */
         text-align: justify; /* Keeps text justified on smaller screens */
+        line-height: 1.6; /* Improves readability */
     }
 
     .owner-gallery {
@@ -459,6 +573,7 @@ p {
 
     .owner-gallery img {
         max-width: 120px; /* Make images slightly smaller */
+
     }
 
     .owner-text p:first-of-type {
@@ -466,88 +581,7 @@ p {
     }
 }
 
-/* ---------------------------------------------------------------- Comments Contact --------------------------------------------------------------*/
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f5ebe0;
-    color: #4a3f35;
-    margin: 0;
-    padding: 0;
-  }
-
-  
-  /* Comments Section */
-  .comments-section, .contact-section {
-    max-width: 600px;
-    background: #fff8f0;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .comment-form input, .comment-form textarea,
-  .contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #d3a484;
-    border-radius: 8px;
-    font-size: 1rem;
-    background: #fffdf8;
-    color: #4a3f35;
-  }
-  
-  .comment-form button, .contact-form button {
-    width: 100%;
-    padding: 10px;
-    background: #7a503d;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .comment-form button:hover, .contact-form button:hover {
-    background: #5d3a2e;
-  }
-  
-  .comments-list {
-    margin-top: 1rem;
-  }
-  
-  .comment-box {
-    background: #fdf7f0;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-left: 4px solid #d3a484;
-    border-radius: 8px;
-  }
-  
-  .comment-box p {
-    margin: 0;
-    font-size: 0.95rem;
-  }
-  
-  .comment-box span {
-    font-size: 0.8rem;
-    color: #7a503d;
-    display: block;
-    margin-top: 4px;
-  }
-  
-  .success-message, .confirmation-message {
-    color: #4a7a3d;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 1rem;
-  }
-  
-  
-/* --------------------------------------------- Interests ----------------------------------- */
+/* ----------------------------- Interests ----------------------------------- */
 /* Interest Section */
 .interest-title {
     font-size: 20px;
@@ -573,17 +607,79 @@ body {
     color: #502917;
     margin-right: 10px;
   }
+   
   
+  /* ------------------------------ footer ------------------------------*/
+/* Full-Width Footer */
+.footer {
+    width: 100%; /* Ensures the footer spans the full width */
+    background-color: #4a3b2b; /* Matching theme color */
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative; /* Avoids unintended shifts */
+}
+
+  
+.footer-content {
+    margin: 0 auto; /* Centers the content */
+    padding: 0 20px; /* Adds padding to prevent text from touching edges */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Footer Links */
+.footer a {
+    color: #f7e7d1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.footer a:hover {
+    color: #d4b59b; /* Slight hover effect */
+}
+
+/* Social Media Icons */
+.footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .social-icons a {
+    font-size: 20px;
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+
+    /* Full-Width Footer */
+    .footer {
+    width: 100%; /* Ensures the footer spans the full width */
+    background-color: #4a3b2b; /* Matching theme color */
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    position: relative; /* Avoids unintended shifts */
+}
+
+.footer-content {
+    margin: 0 auto; /* Centers the content */
+    padding: 10px 10px; /* Adds padding to prevent text from touching edges */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
     
-  
-  
-  
-  
-  
+}
+
+}
 
 
-  
 
-  
-
-  
+    </style>
+    
