@@ -7,9 +7,9 @@
       </div>   
     
       <div class="nav-links">
-          <a href="#home"><b>Home</b></a>
+          <a href="#banner"><b>Home</b></a>
           <a href="#about"><b>Gallery</b></a>
-          <a href="/resume" target="_blank" rel="noopener noreferrer"><b>More</b></a>
+          <a href="/resume"><b>More</b></a>
           <a href="#contact"><b>Contact</b></a>
           <div class="dropdown">
               <button class="dropbtn">

@@ -1,6 +1,5 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import router from './router'; // Import Vue Router
 
 import CommentSection from './components/CommentSection.vue';
 import NavbarBanner from './components/NavbarBanner.vue';
@@ -14,8 +13,6 @@ import 'aos/dist/aos.css';
 const app = createApp(App);
 
 AOS.init();
-
-app.use(router); // Use Vue Router
 
 app.component('CommentSection', CommentSection);
 app.component('NavbarBanner', NavbarBanner);
